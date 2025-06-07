@@ -11,7 +11,7 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section(header: Text("Datos del Usuario")) {
-                    TextField("Peso Corporal (kg)", text: $pesoCorporal)
+                    TextField("Peso Corporal (Kg)", text: $pesoCorporal)
                         .keyboardType(.decimalPad)
                 }
                 
