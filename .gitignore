@@ -1,0 +1,16 @@
+# Xcode
+*.xcuserstate
+*.xcworkspace
+DerivedData/
+build/
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcarchive
+*.playground
+
+# Directorios superiores (para evitar otros proyectos)
+../*
+
+# Pods (opcional, si no usas CocoaPods)
+Pods/
+Podfile.lock

@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59512E6B2DF4BD39000934C0 /* IronMindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E6A2DF4BD39000934C0 /* IronMindApp.swift */; };
+		59512E6D2DF4BD39000934C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E6C2DF4BD39000934C0 /* ContentView.swift */; };
+		59512E6F2DF4BD3D000934C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59512E6E2DF4BD3D000934C0 /* Assets.xcassets */; };
+		59512E722DF4BD3D000934C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59512E712DF4BD3D000934C0 /* Preview Assets.xcassets */; };
+		59512E7C2DF4BD3D000934C0 /* IronMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E7B2DF4BD3D000934C0 /* IronMindTests.swift */; };
+		59512E862DF4BD3E000934C0 /* IronMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E852DF4BD3E000934C0 /* IronMindUITests.swift */; };
+		59512E882DF4BD3E000934C0 /* IronMindUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E872DF4BD3E000934C0 /* IronMindUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59512E782DF4BD3D000934C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59512E5F2DF4BD39000934C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59512E662DF4BD39000934C0;
+			remoteInfo = IronMind;
+		};
+		59512E822DF4BD3E000934C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59512E5F2DF4BD39000934C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59512E662DF4BD39000934C0;
+			remoteInfo = IronMind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59512E672DF4BD39000934C0 /* IronMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59512E6A2DF4BD39000934C0 /* IronMindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMindApp.swift; sourceTree = "<group>"; };
+		59512E6C2DF4BD39000934C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		59512E6E2DF4BD3D000934C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59512E712DF4BD3D000934C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59512E772DF4BD3D000934C0 /* IronMindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IronMindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59512E7B2DF4BD3D000934C0 /* IronMindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMindTests.swift; sourceTree = "<group>"; };
+		59512E812DF4BD3E000934C0 /* IronMindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IronMindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59512E852DF4BD3E000934C0 /* IronMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMindUITests.swift; sourceTree = "<group>"; };
+		59512E872DF4BD3E000934C0 /* IronMindUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMindUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59512E642DF4BD39000934C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59512E742DF4BD3D000934C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59512E7E2DF4BD3E000934C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59512E5E2DF4BD39000934C0 = {
+			isa = PBXGroup;
+			children = (
+				59512E692DF4BD39000934C0 /* IronMind */,
+				59512E7A2DF4BD3D000934C0 /* IronMindTests */,
+				59512E842DF4BD3E000934C0 /* IronMindUITests */,
+				59512E682DF4BD39000934C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59512E682DF4BD39000934C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59512E672DF4BD39000934C0 /* IronMind.app */,
+				59512E772DF4BD3D000934C0 /* IronMindTests.xctest */,
+				59512E812DF4BD3E000934C0 /* IronMindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59512E692DF4BD39000934C0 /* IronMind */ = {
+			isa = PBXGroup;
+			children = (
+				59512E6A2DF4BD39000934C0 /* IronMindApp.swift */,
+				59512E6C2DF4BD39000934C0 /* ContentView.swift */,
+				59512E6E2DF4BD3D000934C0 /* Assets.xcassets */,
+				59512E702DF4BD3D000934C0 /* Preview Content */,
+			);
+			path = IronMind;
+			sourceTree = "<group>";
+		};
+		59512E702DF4BD3D000934C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				59512E712DF4BD3D000934C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59512E7A2DF4BD3D000934C0 /* IronMindTests */ = {
+			isa = PBXGroup;
+			children = (
+				59512E7B2DF4BD3D000934C0 /* IronMindTests.swift */,
+			);
+			path = IronMindTests;
+			sourceTree = "<group>";
+		};
+		59512E842DF4BD3E000934C0 /* IronMindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59512E852DF4BD3E000934C0 /* IronMindUITests.swift */,
+				59512E872DF4BD3E000934C0 /* IronMindUITestsLaunchTests.swift */,
+			);
+			path = IronMindUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59512E662DF4BD39000934C0 /* IronMind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59512E8B2DF4BD3E000934C0 /* Build configuration list for PBXNativeTarget "IronMind" */;
+			buildPhases = (
+				59512E632DF4BD39000934C0 /* Sources */,
+				59512E642DF4BD39000934C0 /* Frameworks */,
+				59512E652DF4BD39000934C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IronMind;
+			productName = IronMind;
+			productReference = 59512E672DF4BD39000934C0 /* IronMind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59512E762DF4BD3D000934C0 /* IronMindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59512E8E2DF4BD3E000934C0 /* Build configuration list for PBXNativeTarget "IronMindTests" */;
+			buildPhases = (
+				59512E732DF4BD3D000934C0 /* Sources */,
+				59512E742DF4BD3D000934C0 /* Frameworks */,
+				59512E752DF4BD3D000934C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59512E792DF4BD3D000934C0 /* PBXTargetDependency */,
+			);
+			name = IronMindTests;
+			productName = IronMindTests;
+			productReference = 59512E772DF4BD3D000934C0 /* IronMindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59512E802DF4BD3E000934C0 /* IronMindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59512E912DF4BD3E000934C0 /* Build configuration list for PBXNativeTarget "IronMindUITests" */;
+			buildPhases = (
+				59512E7D2DF4BD3E000934C0 /* Sources */,
+				59512E7E2DF4BD3E000934C0 /* Frameworks */,
+				59512E7F2DF4BD3E000934C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59512E832DF4BD3E000934C0 /* PBXTargetDependency */,
+			);
+			name = IronMindUITests;
+			productName = IronMindUITests;
+			productReference = 59512E812DF4BD3E000934C0 /* IronMindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59512E5F2DF4BD39000934C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					59512E662DF4BD39000934C0 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					59512E762DF4BD3D000934C0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 59512E662DF4BD39000934C0;
+					};
+					59512E802DF4BD3E000934C0 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 59512E662DF4BD39000934C0;
+					};
+				};
+			};
+			buildConfigurationList = 59512E622DF4BD39000934C0 /* Build configuration list for PBXProject "IronMind" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59512E5E2DF4BD39000934C0;
+			productRefGroup = 59512E682DF4BD39000934C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59512E662DF4BD39000934C0 /* IronMind */,
+				59512E762DF4BD3D000934C0 /* IronMindTests */,
+				59512E802DF4BD3E000934C0 /* IronMindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59512E652DF4BD39000934C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59512E722DF4BD3D000934C0 /* Preview Assets.xcassets in Resources */,
+				59512E6F2DF4BD3D000934C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59512E752DF4BD3D000934C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59512E7F2DF4BD3E000934C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59512E632DF4BD39000934C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59512E6D2DF4BD39000934C0 /* ContentView.swift in Sources */,
+				59512E6B2DF4BD39000934C0 /* IronMindApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59512E732DF4BD3D000934C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59512E7C2DF4BD3D000934C0 /* IronMindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59512E7D2DF4BD3E000934C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59512E882DF4BD3E000934C0 /* IronMindUITestsLaunchTests.swift in Sources */,
+				59512E862DF4BD3E000934C0 /* IronMindUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59512E792DF4BD3D000934C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59512E662DF4BD39000934C0 /* IronMind */;
+			targetProxy = 59512E782DF4BD3D000934C0 /* PBXContainerItemProxy */;
+		};
+		59512E832DF4BD3E000934C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59512E662DF4BD39000934C0 /* IronMind */;
+			targetProxy = 59512E822DF4BD3E000934C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		59512E892DF4BD3E000934C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59512E8A2DF4BD3E000934C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59512E8C2DF4BD3E000934C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IronMind/Preview Content\"";
+				DEVELOPMENT_TEAM = 697VZ664UU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lenin.IronMind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59512E8D2DF4BD3E000934C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IronMind/Preview Content\"";
+				DEVELOPMENT_TEAM = 697VZ664UU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lenin.IronMind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59512E8F2DF4BD3E000934C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 697VZ664UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lenin.IronMindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IronMind.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IronMind";
+			};
+			name = Debug;
+		};
+		59512E902DF4BD3E000934C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 697VZ664UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lenin.IronMindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IronMind.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IronMind";
+			};
+			name = Release;
+		};
+		59512E922DF4BD3E000934C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 697VZ664UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lenin.IronMindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IronMind;
+			};
+			name = Debug;
+		};
+		59512E932DF4BD3E000934C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 697VZ664UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lenin.IronMindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IronMind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59512E622DF4BD39000934C0 /* Build configuration list for PBXProject "IronMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59512E892DF4BD3E000934C0 /* Debug */,
+				59512E8A2DF4BD3E000934C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59512E8B2DF4BD3E000934C0 /* Build configuration list for PBXNativeTarget "IronMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59512E8C2DF4BD3E000934C0 /* Debug */,
+				59512E8D2DF4BD3E000934C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59512E8E2DF4BD3E000934C0 /* Build configuration list for PBXNativeTarget "IronMindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59512E8F2DF4BD3E000934C0 /* Debug */,
+				59512E902DF4BD3E000934C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59512E912DF4BD3E000934C0 /* Build configuration list for PBXNativeTarget "IronMindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59512E922DF4BD3E000934C0 /* Debug */,
+				59512E932DF4BD3E000934C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59512E5F2DF4BD39000934C0 /* Project object */;
+}
