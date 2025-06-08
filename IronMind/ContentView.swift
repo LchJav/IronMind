@@ -78,10 +78,10 @@ struct ResultsView: View {
                     exercise: "Press de Banca",
                     ratio: pressBanca / pesoCorporal,
                     levels: [
-                        (0.5...0.75, "Principiante"),
-                        (1.0...1.25, "Intermedio"),
-                        (1.5...1.75, "Avanzado"),
-                        (2.0...99.9, "Elite")
+                        (0.5...0.99, "Principiante"),
+                        (1.0...1.39, "Intermedio"),
+                        (1.40...1.79, "Avanzado"),
+                        (1.80...Double.infinity, "Elite")
                     ]
                 )
             }
@@ -91,10 +91,10 @@ struct ResultsView: View {
                     exercise: "Sentadilla Libre",
                     ratio: sentadillaLibre / pesoCorporal,
                     levels: [
-                        (0.75...1.24, "Principiante"),
-                        (1.25...1.74, "Intermedio"),
-                        (1.75...2.24, "Avanzado"),
-                        (2.25...10.0, "Elite")
+                        (0.8...1.29, "Principiante"),
+                        (1.30...1.79, "Intermedio"),
+                        (1.80...2.29, "Avanzado"),
+                        (2.30...Double.infinity, "Elite")
                     ]
                 )
             }
@@ -104,10 +104,10 @@ struct ResultsView: View {
                     exercise: "Peso Muerto",
                     ratio: pesoMuerto / pesoCorporal,
                     levels: [
-                        (1.0...1.25, "Principiante"),
-                        (1.5...1.75, "Intermedio"),
-                        (2.0...2.25, "Avanzado"),
-                        (2.5...99.9, "Elite")
+                        (1.0...1.49, "Principiante"),
+                        (1.5...1.99, "Intermedio"),
+                        (2.0...2.49, "Avanzado"),
+                        (2.5...Double.infinity, "Elite")
                     ]
                 )
             }
