@@ -6,44 +6,82 @@ struct ContentView: View {
     @State private var sentadillaLibre: String = ""
     @State private var pesoMuerto: String = ""
     @State private var resultado: Bool = false
+    @State private var seleccionGenero: String? = nil
     
     var body: some View {
         NavigationView {
-            Form {
-                Section(header: Text("Datos del Usuario")) {
-                    TextField("Peso Corporal (Kg)", text: $pesoCorporal)
-                        .keyboardType(.decimalPad)
-                }
-                
-                Section(header: Text("Pesos Levantados (kg)")) {
-                    TextField("Press de Banca", text: $pressBanca)
-                        .keyboardType(.decimalPad)
-                    TextField("Sentadilla Libre", text: $sentadillaLibre)
-                        .keyboardType(.decimalPad)
-                    TextField("Peso Muerto", text: $pesoMuerto)
-                        .keyboardType(.decimalPad)
-                }
-                
-                Button(action: {
-                    resultado = true
-                }) {
-                    Text("Calcular Nivel")
-                        .frame(maxWidth: .infinity)
+            if seleccionGenero == nil {
+                VStack(spacing: 20) {
+                    Text("Selecciona tu género")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
                         .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+                    
+                    Button(action: {
+                        seleccionGenero = "Hombre"
+                    }) {
+                        Text("Hombre")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .cornerRadius(10)
+                    }
+                    .padding(.horizontal)
+                    
+                    Button(action: {
+                        seleccionGenero = "Mujer"
+                    }) {
+                        Text("Mujer")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .cornerRadius(10)
+                    }
+                    .padding(.horizontal)
                 }
-                .disabled(!esEntradaValida())
-            }
-            .navigationTitle("IronMind")
-            .sheet(isPresented: $resultado) {
-                ResultsView(
-                    pesoCorporal: Double(pesoCorporal) ?? 0,
-                    pressBanca: Double(pressBanca) ?? -1,
-                    sentadillaLibre: Double(sentadillaLibre) ?? -1,
-                    pesoMuerto: Double(pesoMuerto) ?? -1
-                )
+                .navigationTitle("IronMind")
+            } else {
+                Form {
+                    Section(header: Text("Datos del Usuario")) {
+                        TextField("Peso Corporal (Kg)", text: $pesoCorporal)
+                            .keyboardType(.decimalPad)
+                    }
+                    
+                    Section(header: Text("Pesos Levantados (kg)")) {
+                        TextField("Press de Banca", text: $pressBanca)
+                            .keyboardType(.decimalPad)
+                        TextField("Sentadilla Libre", text: $sentadillaLibre)
+                            .keyboardType(.decimalPad)
+                        TextField("Peso Muerto", text: $pesoMuerto)
+                            .keyboardType(.decimalPad)
+                    }
+                    
+                    Button(action: {
+                        resultado = true
+                    }) {
+                        Text("Calcular Nivel")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .disabled(!esEntradaValida())
+                }
+                .navigationTitle("IronMind")
+                .sheet(isPresented: $resultado) {
+                    ResultsView(
+                        pesoCorporal: Double(pesoCorporal) ?? 0,
+                        pressBanca: Double(pressBanca) ?? -1,
+                        sentadillaLibre: Double(sentadillaLibre) ?? -1,
+                        pesoMuerto: Double(pesoMuerto) ?? -1,
+                        isMale: seleccionGenero == "Hombre"
+                    )
+                }
             }
         }
     }
@@ -65,6 +103,7 @@ struct ResultsView: View {
     let pressBanca: Double
     let sentadillaLibre: Double
     let pesoMuerto: Double
+    let isMale: Bool // New parameter for gender
     
     var body: some View {
         VStack(spacing: 20) {
@@ -77,11 +116,16 @@ struct ResultsView: View {
                 ExerciseResultView(
                     exercise: "Press de Banca",
                     ratio: pressBanca / pesoCorporal,
-                    levels: [
+                    levels: isMale ? [
                         (0.5...0.99, "Principiante"),
                         (1.0...1.39, "Intermedio"),
                         (1.40...1.79, "Avanzado"),
                         (1.80...Double.infinity, "Elite")
+                    ] : [
+                        (0.30...0.59, "Principiante"),
+                        (0.60...0.89, "Intermedio"),
+                        (0.90...1.19, "Avanzado"),
+                        (1.20...Double.infinity, "Élite")
                     ]
                 )
             }
@@ -90,11 +134,16 @@ struct ResultsView: View {
                 ExerciseResultView(
                     exercise: "Sentadilla Libre",
                     ratio: sentadillaLibre / pesoCorporal,
-                    levels: [
+                    levels: isMale ? [
                         (0.8...1.29, "Principiante"),
                         (1.30...1.79, "Intermedio"),
                         (1.80...2.29, "Avanzado"),
                         (2.30...Double.infinity, "Elite")
+                    ] : [
+                        (0.50...0.99, "Principiante"),
+                        (1.00...1.39, "Intermedio"),
+                        (1.40...1.89, "Avanzado"),
+                        (1.90...Double.infinity, "Élite")
                     ]
                 )
             }
@@ -103,11 +152,16 @@ struct ResultsView: View {
                 ExerciseResultView(
                     exercise: "Peso Muerto",
                     ratio: pesoMuerto / pesoCorporal,
-                    levels: [
+                    levels: isMale ? [
                         (1.0...1.49, "Principiante"),
                         (1.5...1.99, "Intermedio"),
                         (2.0...2.49, "Avanzado"),
                         (2.5...Double.infinity, "Elite")
+                    ] : [
+                        (0.60...1.09, "Principiante"),
+                        (1.10...1.49, "Intermedio"),
+                        (1.50...1.99, "Avanzado"),
+                        (2.00...Double.infinity, "Élite")
                     ]
                 )
             }
