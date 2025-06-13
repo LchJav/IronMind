@@ -11,8 +11,7 @@ import SwiftUI
 struct IronMindApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SeleccionView()
         }
     }
 }
-

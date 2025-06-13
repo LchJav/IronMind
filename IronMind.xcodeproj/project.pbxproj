@@ -10,10 +10,14 @@
 		59512E6B2DF4BD39000934C0 /* IronMindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E6A2DF4BD39000934C0 /* IronMindApp.swift */; };
 		59512E6D2DF4BD39000934C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E6C2DF4BD39000934C0 /* ContentView.swift */; };
 		59512E6F2DF4BD3D000934C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59512E6E2DF4BD3D000934C0 /* Assets.xcassets */; };
-		59512E722DF4BD3D000934C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59512E712DF4BD3D000934C0 /* Preview Assets.xcassets */; };
 		59512E7C2DF4BD3D000934C0 /* IronMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E7B2DF4BD3D000934C0 /* IronMindTests.swift */; };
 		59512E862DF4BD3E000934C0 /* IronMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E852DF4BD3E000934C0 /* IronMindUITests.swift */; };
 		59512E882DF4BD3E000934C0 /* IronMindUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59512E872DF4BD3E000934C0 /* IronMindUITestsLaunchTests.swift */; };
+		59CAC1072DFBC8C500B8413B /* SeleccionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAC1062DFBC8C500B8413B /* SeleccionView.swift */; };
+		59CAC1092DFBCE4200B8413B /* TablaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAC1082DFBCE4200B8413B /* TablaView.swift */; };
+		59CAC10B2DFBCE6200B8413B /* InformacionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAC10A2DFBCE6200B8413B /* InformacionView.swift */; };
+		59CAC10D2DFBCE8100B8413B /* InfoPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAC10C2DFBCE8100B8413B /* InfoPersonalView.swift */; };
+		59CAC10F2DFBCF7900B8413B /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CAC10E2DFBCF7900B8413B /* ResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +42,16 @@
 		59512E6A2DF4BD39000934C0 /* IronMindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMindApp.swift; sourceTree = "<group>"; };
 		59512E6C2DF4BD39000934C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59512E6E2DF4BD3D000934C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		59512E712DF4BD3D000934C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59512E772DF4BD3D000934C0 /* IronMindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IronMindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59512E7B2DF4BD3D000934C0 /* IronMindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMindTests.swift; sourceTree = "<group>"; };
 		59512E812DF4BD3E000934C0 /* IronMindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IronMindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59512E852DF4BD3E000934C0 /* IronMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMindUITests.swift; sourceTree = "<group>"; };
 		59512E872DF4BD3E000934C0 /* IronMindUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMindUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59CAC1062DFBC8C500B8413B /* SeleccionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionView.swift; sourceTree = "<group>"; };
+		59CAC1082DFBCE4200B8413B /* TablaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablaView.swift; sourceTree = "<group>"; };
+		59CAC10A2DFBCE6200B8413B /* InformacionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformacionView.swift; sourceTree = "<group>"; };
+		59CAC10C2DFBCE8100B8413B /* InfoPersonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPersonalView.swift; sourceTree = "<group>"; };
+		59CAC10E2DFBCF7900B8413B /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,18 +104,14 @@
 			children = (
 				59512E6A2DF4BD39000934C0 /* IronMindApp.swift */,
 				59512E6C2DF4BD39000934C0 /* ContentView.swift */,
+				59CAC1062DFBC8C500B8413B /* SeleccionView.swift */,
+				59CAC1082DFBCE4200B8413B /* TablaView.swift */,
+				59CAC10A2DFBCE6200B8413B /* InformacionView.swift */,
+				59CAC10C2DFBCE8100B8413B /* InfoPersonalView.swift */,
+				59CAC10E2DFBCF7900B8413B /* ResultsView.swift */,
 				59512E6E2DF4BD3D000934C0 /* Assets.xcassets */,
-				59512E702DF4BD3D000934C0 /* Preview Content */,
 			);
 			path = IronMind;
-			sourceTree = "<group>";
-		};
-		59512E702DF4BD3D000934C0 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				59512E712DF4BD3D000934C0 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		59512E7A2DF4BD3D000934C0 /* IronMindTests */ = {
@@ -231,7 +235,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59512E722DF4BD3D000934C0 /* Preview Assets.xcassets in Resources */,
 				59512E6F2DF4BD3D000934C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				59512E6D2DF4BD39000934C0 /* ContentView.swift in Sources */,
+				59CAC1092DFBCE4200B8413B /* TablaView.swift in Sources */,
+				59CAC10B2DFBCE6200B8413B /* InformacionView.swift in Sources */,
+				59CAC1072DFBC8C500B8413B /* SeleccionView.swift in Sources */,
+				59CAC10F2DFBCF7900B8413B /* ResultsView.swift in Sources */,
+				59CAC10D2DFBCE8100B8413B /* InfoPersonalView.swift in Sources */,
 				59512E6B2DF4BD39000934C0 /* IronMindApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
